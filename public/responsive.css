@@ -1,0 +1,45 @@
+/* Shared proportional sizing for phones, tablets and larger displays. */
+body { font-size: clamp(17px, 1.25vw, 21px); }
+header, main, footer { padding-inline: clamp(18px, 4vw, 64px); }
+header { padding-block: clamp(54px, 7vw, 116px) clamp(28px, 4vw, 58px); }
+.artist-name { font-size: clamp(34px, 11.4vw, 205px); }
+h2, nav, .menu-bar summary { font-size: clamp(13px, 1vw, 16px); }
+.menu-bar summary { min-height: 54px; }
+.page-copy { padding: 28px clamp(20px, 4vw, 64px) 80px; }
+.page-copy h2 { font-size: clamp(38px, 4.5vw, 68px); }
+.release .wreath-link { width: min(82%, clamp(320px, 38vw, 580px)); margin: clamp(48px, 5.5vw, 88px) auto; }
+.single-title { margin: 0 auto 14px; font: 400 clamp(37px, 4.2vw, 66px)/1.25 "Great Vibes", "Apple Chancery", cursive; text-wrap: balance; }
+.details { font-size: clamp(15px, 1.1vw, 18px); }
+.about { padding-block: clamp(44px, 5vw, 80px); }
+.about p, .page-copy > p { max-width: 62ch; }
+.media-gallery { width: min(82%, 560px); max-width: none; padding: 0; margin: clamp(52px, 6vw, 90px) auto; }
+.events-page { max-width: 1120px; }
+.page-copy .event-section h3 { font-size: clamp(30px, 3vw, 44px); }
+.event-card h4 { font-size: clamp(25px, 2.2vw, 32px); }
+.event-date, .event-meta { font-size: .9em; }
+.contact-form { max-width: 640px; }
+.socials a { width: 52px; height: 52px; }
+.socials svg { width: 29px; height: 29px; }
+footer { padding-block: 32px; }
+@media (max-width: 660px) {
+  .artist-name { font-size: 11.1vw; }
+  .release { padding-bottom: 48px; }
+  .menu-bar[open] .site-nav { font-size: clamp(44px, 10vw, 68px); gap: 24px; }
+}
+
+.press-feature { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, .8fr); align-items: center; gap: clamp(32px, 6vw, 88px); max-width: 1040px; margin: 56px auto 64px; padding-block: 36px; border-top: 1px solid #f5e9e529; border-bottom: 1px solid #f5e9e529; text-align: left; }
+.page-copy .press-label { color: #dec1c8; font-size: .7em; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 20px; }
+.press-copy h3 { font: 400 clamp(30px, 3vw, 44px)/1.15 Georgia, serif; margin: 0 0 24px; }
+.press-copy blockquote { font: italic 400 clamp(23px, 2.3vw, 33px)/1.4 Georgia, serif; margin: 0 0 22px; }
+.page-copy .press-copy p { margin: 0 0 24px; }
+.press-read { display: inline-block; padding-block: 10px; font-size: .85em; }
+.press-photo { display: block; max-width: 320px; justify-self: end; }
+.press-photo img { display: block; width: 100%; height: auto; }
+@media (max-width: 660px) { .press-feature { grid-template-columns: 1fr; margin-top: 32px; gap: 28px; } .press-photo { width: 72%; max-width: 280px; justify-self: start; } }
+
+/* Biography: an intimate reading rhythm within the existing dark design. */
+.about .about-quote { max-width: 32ch; margin: 28px auto 44px; font: italic 400 clamp(26px, 3vw, 42px)/1.45 Georgia, serif; color: #ead5da; text-wrap: balance; }
+.about-copy, .single-story { max-width: 62ch; margin-inline: auto; text-align: left; }
+.single-story { margin-top: clamp(40px, 5vw, 72px); padding-top: 36px; border-top: 1px solid #f5e9e529; }
+.about .story-label { margin-bottom: 12px; text-transform: uppercase; letter-spacing: .16em; font-size: 14px; color: #dec1c8; }
+.single-story h3 { margin: 0 0 24px; font: 400 clamp(36px, 4vw, 56px)/1.3 "Great Vibes", "Apple Chancery", cursive; }
